@@ -4,6 +4,78 @@
 >
 > --- **George E. P. Box**
 
+
+* plot hist of resids
+* plot fitted vs true
+* t-value, p-value, std.error is estimate's precision
+* R-squared
+
+
+
+
+
+
+1. R
+1. Summay stats
+1. linear regression - stop at R-squared
+    1. different data: missing variable
+    1. non-linear realtionship
+1. Standard Errors
+    1. True data
+    1. play with N and see how errors behave
+1. Multiple regression with continuous vars
+    1. income ~ age is not linear
+1. Categorical vars: dummies and interactions
+    1. if you only have educ categories, the estimate is like the conditional mean by educ
+    1. if you have too many categories you will have empty bins
+1. Quantile Regression
+    1. before modelling the mean. the average link
+    1. now what happens to **outliers**? how robust is the mean to that
+    1. what about the entire distribution of this?
+1. Panel Data, DiD    
+    * scanner data on breakfast cereals, $(x_it,D_it)$
+    * why does D vary
+    * pos relation ship 
+    * don't observe the group identity!
+    * unobserved het alpha is correlated with Q
+    * within group estimator
+    * what if you don't have panel data?
+1. IV?
+    1. wage = educ
+    1. educ = ability
+    1. ols estimator captures your ability
+    1. you predict x by z and you only keep the variation that is in the error
+1. Logit / Probit, MLogit
+1. Factor Analysis, PCA
+
+
+## first session
+
+1. scatter plot
+  1. label observations
+  1. how do the data come to us? spreadsheet
+1. approx link x and y by a line
+1. OLS gives the best line for this
+  1. $y_i = a+b x_i$. find a,b s.t. dist is minimal
+  1. write out sum of least-squares and call it MSE: u_1 + u_2 + ... / N
+1. plot fitted values - see imperfect approximation
+1. R-squared: goodness of fit / measure of goodness
+  1. 1 - sum of squared errors / SST
+  1. how much of total variance is explained by the model?
+1. regression on mean
+1. How come there are residuals? 
+  1. measurement error?
+  1. there is more to this than just x
+  1. misspecification 
+1. There is statistical uncertainty about those estimates
+1. plot a second data set with a less clear interpretation
+  1. do you *really* think there is a linear relationship?
+  1. SE tells us whethe rwe really think this is a positive slope
+  1. poor R2 and large standard error
+  1. How **confident** are you about this relationship? Is there enought data?
+  1. SE is ameasure of precision depending on N
+
+
 After reading this chapter you will be able to:
 
 - Understand the concept of a model.
